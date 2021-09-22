@@ -6,7 +6,6 @@ const dbLink = Link.mogoLink;
 mongoose.connect(dbLink).then(function(){
     console.log("db connected");
 })
-
 .catch(function(err){
     console.log(err);
 })

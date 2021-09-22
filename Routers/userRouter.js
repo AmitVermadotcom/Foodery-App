@@ -21,12 +21,15 @@ async function getUser(req,res){
         if(users){
             return res.json(users);
         }
+        
         else{
             return res.json({
                 message : 'users not found'
             });
         }
     }
+
+
     catch(err){
         return res.json({
             message : err.message

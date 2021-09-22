@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');``
 //----------routes-----------
 authRouter
 .route('/signup')
+
 .post(setCreatedAt,signupUser);
 
 authRouter
